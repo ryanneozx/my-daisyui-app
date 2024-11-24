@@ -1,0 +1,2 @@
+
+Medium Article on how to install DaisyUI in React + Vite Proj: https://medium.com/@ibrahimkhalil_6554/installing-daisyui-in-a-react-js-project-with-vite-f2f71900f094
