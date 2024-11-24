@@ -1,6 +1,6 @@
-import githubLogo from './assets/github.svg'
-import linkedinLogo from './assets/linkedin.svg'
 import Themes from './navthemes'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = (props) => {
     return(
@@ -38,11 +38,12 @@ const Navbar = (props) => {
                 </div>
                 <div className="navbar-end">
                     {/* Socials Icon Links */}
-                    <a href="https://github.com/ryanneozx" className='p-1 svg' target="_blank">
-                        <img src={githubLogo} className="h-8 w-8 color-primary svg" alt="Github Social" />
+                    <a href="https://github.com/ryanneozx" target="_blank">
+                        <FaGithub className='h-8 w-8'></FaGithub>
                     </a>
+                    
                     <a href="https://www.linkedin.com/in/ryan-neo/" className='p-1' target="_blank">
-                        <img src={linkedinLogo} className="h-8 w-8" alt="Linkedin Social" />
+                        <FaLinkedin className='h-8 w-8'></FaLinkedin>
                     </a>
                     {/* <button className="btn btn-primary mt-4" data-toggle-theme="coffee,night" data-act-class="ACTIVECLASS">Switch Theme</button> */}
                     {/* Theme Dropdown Menu (for testing) */}
