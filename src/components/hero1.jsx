@@ -3,7 +3,7 @@ import resume from '../assets/resume.pdf'
 
 const Hero1 = (props) => {
     return(
-    <div className="hero min-h-screen">
+    <div id="home" name="home" className="hero min-h-screen">
         <div className="hero-content text-center">
         <div className="max-w-md">
             <div className="avatar">
