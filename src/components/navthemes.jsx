@@ -17,15 +17,7 @@ const Themes = (props) => {
                 type="radio"
                 name="theme-dropdown"
                 className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Default (Coffee)"
-                value="coffee" />
-            </li>
-            <li>
-            <input
-                type="radio"
-                name="theme-dropdown"
-                className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="Sunset"
+                aria-label="Default (Sunset)"
                 value="sunset" />
             </li>
             <li>
