@@ -1,6 +1,6 @@
 const About = (props) => {
     return (
-        <div id="about-me" name="about-me" className="hero bg-base-200 min-h-screen">
+        <div id="about-me" name="about-me" className="hero bg-base-100 min-h-screen">
     <div className="hero-content flex-col lg:flex-row-reverse">
         <img
             src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -27,7 +27,7 @@ const About = (props) => {
                 <h2 className="text-md font-semibold mb-3">Technologies I've worked with:</h2>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                     {/* Programming Languages */}
-                    <div className="card bg-base-100 shadow-md p-3">
+                    <div className="card bg-base-300 shadow-md p-3">
                         <h3 className="font-bold text-secondary mb-1">Programming Languages</h3>
                         <ul className="list-disc list-inside">
                             <li>C</li>
@@ -39,7 +39,7 @@ const About = (props) => {
                         </ul>
                     </div>
                     {/* Frameworks & Libraries */}
-                    <div className="card bg-base-100 shadow-md p-3">
+                    <div className="card bg-base-300 shadow-md p-3">
                         <h3 className="font-bold text-secondary mb-1">Frameworks & Libraries</h3>
                         <ul className="list-disc list-inside">
                             <li>Flask</li>
@@ -50,7 +50,7 @@ const About = (props) => {
                         </ul>
                     </div>
                     {/* Databases */}
-                    <div className="card bg-base-100 shadow-md p-3">
+                    <div className="card bg-base-300 shadow-md p-3">
                         <h3 className="font-bold text-secondary mb-1">Databases</h3>
                         <ul className="list-disc list-inside">
                             <li><span className="font-semibold">SQL:</span> PostgreSQL, MySQL, SQLite</li>
@@ -58,7 +58,7 @@ const About = (props) => {
                         </ul>
                     </div>
                     {/* DevOps & Cloud */}
-                    <div className="card bg-base-100 shadow-md p-3">
+                    <div className="card bg-base-300 shadow-md p-3">
                         <h3 className="font-bold text-secondary mb-1">DevOps & Cloud</h3>
                         <ul className="list-disc list-inside">
                             <li>Docker</li>
