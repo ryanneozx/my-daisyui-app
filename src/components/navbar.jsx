@@ -4,11 +4,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = (props) => {
     return(
-    <div className="drawer h-screen">
+    <div className="drawer h-screen top-0 z-10">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
             {/* Navbar */}
-            <div className="navbar bg-base-100 w-full sticky top-0">
+            <div className="navbar bg-base-100 w-full sticky top-0 z-10">
                 <div className="flex-none lg:hidden">
                     <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                     <svg
@@ -28,8 +28,8 @@ const Navbar = (props) => {
                 <div className="navbar-center hidden flex-none lg:block">
                     <ul className="menu menu-horizontal">
                     {/* Navbar menu content here */}
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
                     <li><a>Experience</a></li>
                     <li><a>Projects</a></li>
                     <li><a>Education</a></li>
