@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define the floating up animation */
+@keyframes floatUp {
+  0% {
+      transform: translateY(20px);  /* Start slightly below */
+      opacity: 0;                   /* Start invisible */
+  }
+  100% {
+      transform: translateY(0);     /* End at the original position */
+      opacity: 1;                   /* Fade in */
+  }
+}
+
+/* Apply the animation to the text */
+.floating-text {
+  /* display: inline-block; */
+  /* font-size: 2rem; */
+  /* font-weight: bold; */
+  animation: floatUp 1s ease-out forwards;
+}
+
+
 .svg {
   color: oklch(var(--p));
   fill: oklch(var(--p));

@@ -10,7 +10,6 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div >
     <Navbar>
       <Hero1></Hero1>
       <About></About>
@@ -19,7 +18,7 @@ function App() {
             <h1 className="text-3xl font-bold text-center">Hello DaisyUI!</h1>
             
             <button className="btn btn-secondary mt-4">Click Me</button>
-            <button class="btn btn-accent">Button</button>
+            <button className="btn btn-accent">Button</button>
           </div>
             <div>
               <a href="https://vite.dev" target="_blank">
@@ -42,7 +41,6 @@ function App() {
               Click on the Vite and React logos to learn more
             </p>
     </Navbar>
-    </div>
   )
 }
 
