@@ -4,7 +4,7 @@ import { IoIosPaper } from "react-icons/io";
 
 const Hero1 = (props) => {
     return (
-        <div id="home" name="home" className="hero min-h-screen">
+        <div id="" name="" className="hero min-h-screen">
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <div className="avatar">
@@ -21,7 +21,7 @@ const Hero1 = (props) => {
                         <p className="py-6">
                             I'm currently a student based in Singapore. I have a profound interest in Web App Development, 
                             Android App Development, and Cybersecurity surrounding them. 
-                            I have a curious mind which makes me want to explore and learn more about new technologies.
+                            
                         </p>
                         <div className="flex justify-center gap-1 floating-text">
                             <a href={resume} target="_blank" rel="noopener noreferrer">
