@@ -2,9 +2,10 @@ const About = (props) => {
     return (
         <div id="about-me" name="about-me" className="hero bg-base-100 min-h-screen">
     <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl lg:ml-6" />
+        <div>
+            <img className="max-w-sm rounded-lg shadow-2xl lg:ml-6 mb-4" src="src\assets\selfie.JPEG"/>
+            <img className="max-w-sm rounded-lg shadow-2xl lg:ml-6" src="src\assets\profCam.JPEG"/>
+        </div>
         <div className="text-left w-3/5 mx-auto">
             <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
             <hr className="border-t-2 border-secondary mb-6"></hr>
