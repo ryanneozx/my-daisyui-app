@@ -4,7 +4,7 @@ import { IoIosPaper } from "react-icons/io";
 
 const Hero1 = (props) => {
     return (
-        <div id="" name="" className="hero min-h-screen">
+        <div id="home" name="home" className="hero min-h-screen">
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <div className="avatar">
