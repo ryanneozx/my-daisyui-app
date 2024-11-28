@@ -5,6 +5,9 @@ import './App.css'
 import Navbar from './components/navbar'
 import Hero1 from './components/hero1'
 import About from './components/about'
+import Experience from './components/experience'
+import Projects from './components/projects'
+import Experience2 from './components/experience2'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +16,9 @@ function App() {
     <Navbar>
       <Hero1></Hero1>
       <About></About>
+      <Experience></Experience>
+      <Experience2></Experience2>
+      <Projects></Projects>
           <div className="p-6">
 
             <h1 className="text-3xl font-bold text-center">Hello DaisyUI!</h1>
