@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+html { scroll-behavior: smooth; }
+
 /* Define the floating up animation */
 @keyframes floatUp {
   0% {
@@ -20,13 +22,6 @@
   /* font-size: 2rem; */
   /* font-weight: bold; */
   animation: floatUp 1s ease-out forwards;
-}
-
-
-.svg {
-  color: oklch(var(--p));
-  fill: oklch(var(--p));
-  
 }
 
 .typewriter h1 {
