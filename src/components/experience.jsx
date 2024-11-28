@@ -11,32 +11,36 @@ const Experience = (props) => {
             </div>
   
             {/* Content Section */}
-            <div role="tablist" className="tabs tabs-bordered tabs-lg w-full accent-primary border-primary">
-                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold accent-primary border-primary" aria-label="DSTA" defaultChecked/>
-                <div role="tabpanel" className="tab-content bg-base-200 p-10 min-h-56">
+            <div role="tablist" className="tabs tabs-bordered tabs-lg w-full">
+                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="DSTA" defaultChecked/>
+                <div role="tabpanel" className="tab-content p-10 min-h-80">
                     <h3 className="text-2xl font-semibold">Cybersecurity Intern @ <span className="text-secondary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
                     <p className="text-lg">Mar 2022 - Aug 2022 (6 Months)</p>
-                    <ul className="list-disc list-inside text-lg pt-4">
+                    <ul className="list-disc list-inside text-lg pt-4 space-y-4">
                         <li>
-                            Implemented a DevSecOps pipeline for Android applications using Jenkins and GitLab.
+                            Designed and deployed a robust DevSecOps pipeline for Android applications using Jenkins and GitLab, 
+                            automating security testing and integrating seamless feedback loops into the development lifecycle.
                         </li>
                         <li>
-                            Developed Python scripts and integrated tools for automated dynamic analysis of apps based on OWASP MASVS.
+                        Engineered Python scripts and integrated advanced tools to automate dynamic security analysis of Android applications, 
+                        aligning with OWASP MASVS standards to ensure comprehensive threat detection and compliance.
                         </li>
                     </ul>
-                    
                 </div>
 
-                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold" aria-label="SAF MINDEF (NS)" />
-                <div role="tabpanel" className="tab-content p-10 bg-base-200 min-h-56">
-                <h3 className="text-2xl font-semibold">Admin Support Assistant @ <span className="text-secondary font-semibold">G1 Army</span></h3>
-                    <p className="text-lg">Dec 2023 - Aug 2025</p>
-                    <ul className="list-disc list-inside text-lg pt-4">
+                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="SAF MINDEF (NS)" />
+                <div role="tabpanel" className="tab-content p-10 min-h-80">
+                <h3 className="text-2xl font-semibold">Admin Support Assistant (Data Analyst) @ <span className="text-secondary font-semibold">G1 Army</span></h3>
+                    <p className="text-lg">Dec 2023 - Aug 2025 (1 Year 8 Months)</p>
+                    <ul className="list-disc list-inside text-lg pt-4 space-y-2">
                         <li>
-                            Implemented a DevSecOps pipeline for Android applications using Jenkins and GitLab.
+                            Conducted detailed trend analysis to identify patterns and anomalies, supporting strategic planning and operational efficiency.
                         </li>
                         <li>
-                            Developed Python scripts and integrated tools for automated dynamic analysis of apps based on OWASP MASVS.
+                            Designed and implemented dashboards in PowerBI for the army, providing data-driven insights into key metrics and operational trends.
+                        </li>
+                        <li>
+                            Developed VBA scripts to streamline repetitive processes, reducing task completion time by up to 40% and improving team productivity.
                         </li>
                     </ul>
                 </div>
