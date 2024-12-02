@@ -2,7 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* example to apply tailwind class in css
+.btn {
+  @apply rounded-full;
+} */
+
 html { scroll-behavior: smooth; }
+
+/* li { list-style-type: disc; 
+  list-style-image: url("src/assets/finger-pointer.svg");
+}
+
+ul li::marker{
+  font-size: 3.6em;
+  line-height: 0.1;
+  color: rgb(255, 4, 4);
+} 
+
+li span{
+  vertical-align: 0.1em;
+  transform: translate(-0.1em, 0.2em);
+} */
+
+/* ul li::marker {
+  color: oklch(var(--s));
+  font-size: 1.5em;
+} */
 
 /* Define the floating up animation */
 @keyframes floatUp {

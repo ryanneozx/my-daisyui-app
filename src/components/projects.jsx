@@ -14,7 +14,7 @@ const Projects = (props) => {
                     src="src/assets/test.png"
                     className="w-full" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
+                        <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -33,12 +33,12 @@ const Projects = (props) => {
                     className="w-full" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
+                        <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
             </div>
             
-            <div className="grid grid-cols-3 gap-1">
+            <div className="grid grid-cols-3 gap-1 mt-4">
                 <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 w-96 h-56">
                     <div className="card-body p-0 ">
                         <h3 className="card-title m-0 p-0 align-top">Blogs App</h3>

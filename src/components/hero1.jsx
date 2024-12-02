@@ -24,8 +24,8 @@ const Hero1 = (props) => {
                             
                         </p>
                         <div className="flex justify-center gap-1 floating-text">
-                            <a href={resume} target="_blank" rel="noopener noreferrer">
-                                <button className="btn btn-primary mr-2">
+                            <a href={resume} target="_blank" rel="noopener noreferrer" className='mr-2'>
+                                <button className="btn btn-primary">
                                 <div className="flex items-center text-primary-content">
                                     <IoIosPaper className="h-6 w-6 text-primary-content mr-2"/>
                                     <span className="text-primary-content">View Resume</span></div>

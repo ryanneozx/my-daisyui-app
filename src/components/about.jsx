@@ -11,16 +11,16 @@ const About = (props) => {
             <hr className="border-t-2 border-secondary mb-6"></hr>
 
             <p className="py-2 font-medium">
-                I am <span className="text-secondary font-semibold">currently serving National Service</span> and will begin studying Computer Science 
-                at <span className="text-secondary font-semibold">NUS</span> next year.
+                I am <span className="text-primary font-semibold">currently serving National Service</span> and will begin studying Computer Science 
+                at <span className="text-primary font-semibold">NUS</span> next year.
             </p>
             <p className="py-2">
-                In 2023, I graduated with a diploma in 
-                <span className="text-secondary"> Cybersecurity and Digital Forensics </span> from Nanyang Polytechnic, 
+                In 2023, I graduated with a <span className="text-primary font-semibold"><div className="tooltip tooltip-accent" data-tip="Awarded to top 10% of cohort (3.97/4 GPA)">Diploma with Merit</div> in 
+                 Cybersecurity and Digital Forensics </span> from Nanyang Polytechnic, 
                 focusing on Operational Intelligence and Artificial Intelligence.
             </p>
             <p className="py-2">
-                I am passionate about <span className="text-accent font-semibold">Software Engineering, Cybersecurity, and Machine Learning. </span> 
+                I am passionate about <span className="text-primary font-semibold">Software Engineering, Cybersecurity, and Machine Learning. </span> 
                 I have a curious mind which makes me want to explore, learn, and create new innovative technologies.
             </p>
 
@@ -29,7 +29,7 @@ const About = (props) => {
                 <div className="grid grid-cols-2 gap-3 text-sm">
                     {/* Programming Languages */}
                     <div className="card bg-base-300 shadow-md p-3">
-                        <h3 className="font-bold text-secondary mb-1">Programming Languages</h3>
+                        <h3 className="font-bold text-primary mb-1">Programming Languages</h3>
                         <ul className="list-disc list-inside">
                             <li>C</li>
                             <li>Python</li>
@@ -41,7 +41,7 @@ const About = (props) => {
                     </div>
                     {/* Frameworks & Libraries */}
                     <div className="card bg-base-300 shadow-md p-3">
-                        <h3 className="font-bold text-secondary mb-1">Frameworks & Libraries</h3>
+                        <h3 className="font-bold text-primary mb-1">Frameworks & Libraries</h3>
                         <ul className="list-disc list-inside">
                             <li>Flask</li>
                             <li>ReactJS</li>
@@ -52,7 +52,7 @@ const About = (props) => {
                     </div>
                     {/* Databases */}
                     <div className="card bg-base-300 shadow-md p-3">
-                        <h3 className="font-bold text-secondary mb-1">Databases</h3>
+                        <h3 className="font-bold text-primary mb-1">Databases</h3>
                         <ul className="list-disc list-inside">
                             <li><span className="font-semibold">SQL:</span> PostgreSQL, MySQL, SQLite</li>
                             <li><span className="font-semibold">NoSQL:</span> MongoDB</li>
@@ -60,7 +60,7 @@ const About = (props) => {
                     </div>
                     {/* DevOps & Cloud */}
                     <div className="card bg-base-300 shadow-md p-3">
-                        <h3 className="font-bold text-secondary mb-1">DevOps & Cloud</h3>
+                        <h3 className="font-bold text-primary mb-1">DevOps & Cloud</h3>
                         <ul className="list-disc list-inside">
                             <li>Docker</li>
                             <li>Jenkins CI/CD</li>
