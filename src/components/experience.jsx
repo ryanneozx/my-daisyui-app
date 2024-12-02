@@ -1,7 +1,7 @@
 const Experience = (props) => {
     return (
         <div  className="">
-      <div id="experience" name="experience" className="hero bg-base-100 min-h-96">
+      <div id="experience" name="experience" className="anchor hero bg-base-100 min-h-96">
         
         <div className="hero-content flex-col text-left mt-4 w-full">
             {/* Header Section */}

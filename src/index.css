@@ -10,6 +10,10 @@
 
 html { scroll-behavior: smooth; }
 
+.anchor {
+  scroll-margin-top: 80px;
+} /* Fixes navbar going past anchor */
+
 /* li { list-style-type: disc; 
   list-style-image: url("src/assets/finger-pointer.svg");
 }
