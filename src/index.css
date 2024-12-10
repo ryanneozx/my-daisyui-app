@@ -53,14 +53,14 @@ hr.active {
 }
 
 /* Apply the animation to the text */
-.floating-text {
+.floating-text.active {
   /* display: inline-block; */
   /* font-size: 2rem; */
   /* font-weight: bold; */
   animation: floatUp 1s ease-out forwards;
 }
 
-.typewriter h1 {
+.typewriter.active h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   /* border-right: .15em solid #c59f60; The typwriter cursor */
   border-right: .15em solid oklch(var(--p)); /* The typwriter cursor */

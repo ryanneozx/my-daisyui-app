@@ -1,29 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = (props) => {
-    const elementsRef = useRef([]); // Use an array to hold multiple refs
+    const elementsRef = useRef([]);
 
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("active"); // Add the active class
-              observer.unobserve(entry.target); // Stop observing after animation
-            }
-          });
-        },
-        { threshold: 0.1 } // Trigger when 10% of the element is visible
-      );
-  
-      elementsRef.current.forEach((el) => {
-        if (el) observer.observe(el);
-      });
-  
-      return () => observer.disconnect(); // Cleanup on component unmount
-    }, []);
+    // Define the callback for when elements intersect
+    const handleIntersect = (element) => {
+        element.classList.add("active");
+    };
 
+    // Use the custom hook
+    useIntersectionObserver(elementsRef, handleIntersect);
+    
     return (
         <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh mx-10 mt-10">
             <div className="text-left">

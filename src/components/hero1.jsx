@@ -1,8 +1,20 @@
+import React, { useRef } from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
 import resume from '../assets/resume.pdf'
 import { IoMailSharp } from "react-icons/io5";
 import { IoIosPaper } from "react-icons/io";
 
 const Hero1 = (props) => {
+    const elementsRef = useRef([]);
+
+    // Define the callback for when elements intersect
+    const handleIntersect = (element) => {
+        element.classList.add("active");
+    };
+
+    // Use the custom hook
+    useIntersectionObserver(elementsRef, handleIntersect);
+
     return (
         <div id="home" name="home" className="hero min-h-screen">
             <div className="hero-content text-center">
@@ -13,10 +25,10 @@ const Hero1 = (props) => {
                             <img src="./src/assets/nerd.png" alt="Ryan's Avatar" />
                         </div>
                     </div>
-                    <div className="text-6xl font-bold typewriter inline-block">
+                    <div ref={(el) => (elementsRef.current[0] = el)} className="text-6xl font-bold typewriter inline-block">
                         <h1>Hi, I'm Ryan.</h1>
                     </div>
-                    <div className='floating-text'>
+                    <div ref={(el) => (elementsRef.current[1] = el)} className='floating-text'>
                         <h2 className="text-2xl font-bold mt-2 floating-text">Software Development and Cybersecurity is my thing.</h2>
                         <p className="py-6">
                             I'm currently a student based in Singapore. I have a profound interest in Web App Development, 
