@@ -8,7 +8,7 @@ const Projects = (props) => {
                 <hr className="border-t-2 border-secondary mb-6"></hr>
             </div>
             
-            <div className="carousel w-4/5">
+            <div className="carousel w-4/5 rounded-box">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img
                     src="src/assets/test.png"
