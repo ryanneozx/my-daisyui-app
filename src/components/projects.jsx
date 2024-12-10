@@ -1,11 +1,34 @@
+import React, { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = (props) => {
+    const elementsRef = useRef([]); // Use an array to hold multiple refs
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active"); // Add the active class
+              observer.unobserve(entry.target); // Stop observing after animation
+            }
+          });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
+      );
+  
+      elementsRef.current.forEach((el) => {
+        if (el) observer.observe(el);
+      });
+  
+      return () => observer.disconnect(); // Cleanup on component unmount
+    }, []);
+
     return (
         <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh mx-10 mt-10">
             <div className="text-left">
                 <h1 className="text-4xl font-bold tracking-wider mb-4">/projects</h1>
-                <hr className="border-t-4 border-secondary mb-6"></hr>
+                <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6"></hr>
             </div>
             
             <div className="carousel w-4/5 rounded-box">

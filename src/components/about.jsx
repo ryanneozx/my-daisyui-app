@@ -1,4 +1,28 @@
+import React, { useEffect, useRef } from "react";
+
 const About = (props) => {
+    const elementsRef = useRef([]); // Use an array to hold multiple refs
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active"); // Add the active class
+              observer.unobserve(entry.target); // Stop observing after animation
+            }
+          });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
+      );
+  
+      elementsRef.current.forEach((el) => {
+        if (el) observer.observe(el);
+      });
+  
+      return () => observer.disconnect(); // Cleanup on component unmount
+    }, []);
+
     return (
         <div id="about-me" name="about-me" className="anchor bg-base-100 ">
             <div className="w-full flex flex-col-reverse lg:flex-row-reverse">
@@ -18,7 +42,7 @@ const About = (props) => {
                 {/* Text Section */}
                 <div className="text-left w-3/5 mx-auto">
                     <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
-                    <hr className="border-t-4 border-secondary mb-6" />
+                    <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6" />
                     <p className="py-2 font-medium">
                         I am <span className="text-primary font-semibold">currently serving National Service</span> and
                         will begin studying Computer Science at{' '}
