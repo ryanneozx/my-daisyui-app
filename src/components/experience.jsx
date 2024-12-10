@@ -1,13 +1,11 @@
 const Experience = (props) => {
     return (
-        <div  className="">
-      <div id="experience" name="experience" className="anchor hero bg-base-100 min-h-96">
-        
-        <div className="hero-content flex-col text-left mt-4 w-full">
+      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96">
+        <div className="flex-col text-left mt-12 mx-10">
             {/* Header Section */}
             <div className="w-full">
-            <h1 className="text-4xl font-bold tracking-wider mb-4">/experience</h1>
-            <hr className="border-t-2 border-secondary mb-6"></hr>
+                <h1 className="text-4xl font-bold tracking-wider mb-4">/experience</h1>
+                <hr className="border-t-2 border-secondary mb-6"></hr>
             </div>
   
             {/* Content Section */}
@@ -21,7 +19,7 @@ const Experience = (props) => {
                         automating security testing and integrating seamless feedback loops into the development lifecycle.
                         </li>
                         <li>
-                        Engineered Python scripts and integrated advanced tools to automate dynamic security analysis of Android applications, 
+                        Engineered Python scripts and integrated tools to automate dynamic security analysis of Android applications, 
                         aligning with OWASP MASVS standards to ensure comprehensive threat detection and compliance.
                         </li>
                     </ul>
@@ -45,7 +43,6 @@ const Experience = (props) => {
                 </div>
             </div>
         </div>
-      </div>
       </div>
     );
 };
