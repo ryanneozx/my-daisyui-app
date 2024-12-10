@@ -39,11 +39,11 @@ const Navbar = (props) => {
                 <div className="navbar-end">
                     {/* Socials Icon Links */}
                     <a href="https://github.com/ryanneozx" target="_blank">
-                        <FaGithub className='h-8 w-8'></FaGithub>
+                        <FaGithub className='h-8 w-8 glow'></FaGithub>
                     </a>
                     
                     <a href="https://www.linkedin.com/in/ryan-neo/" className='p-1' target="_blank">
-                        <FaLinkedin className='h-8 w-8'></FaLinkedin>
+                        <FaLinkedin className='h-8 w-8 glow'></FaLinkedin>
                     </a>
                     {/* <button className="btn btn-primary mt-4" data-toggle-theme="coffee,night" data-act-class="ACTIVECLASS">Switch Theme</button> */}
                     {/* Theme Dropdown Menu (for testing) */}
