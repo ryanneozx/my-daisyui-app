@@ -10,7 +10,6 @@ import Projects from './components/projects'
 import Experience2 from './components/experience2'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Navbar>
