@@ -1,11 +1,11 @@
 const Experience = (props) => {
     return (
-      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96">
-        <div className="flex-col text-left mt-12 mx-10">
+      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 mt-14 mx-10">
+        <div className="flex-col text-left">
             {/* Header Section */}
             <div className="w-full">
                 <h1 className="text-4xl font-bold tracking-wider mb-4">/experience</h1>
-                <hr className="border-t-2 border-secondary mb-6"></hr>
+                <hr className="border-t-4 border-secondary mb-6"></hr>
             </div>
   
             {/* Content Section */}

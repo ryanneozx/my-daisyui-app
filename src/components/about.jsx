@@ -1,6 +1,6 @@
 const About = (props) => {
     return (
-        <div id="about-me" name="about-me" className="anchor bg-base-100 min-h-screen">
+        <div id="about-me" name="about-me" className="anchor bg-base-100 ">
             <div className="w-full flex flex-col-reverse lg:flex-row-reverse">
                 {/* Images Section */}
                 <div className="flex flex-col items-center lg:items-start lg:ml-6 lg:mt-12">
@@ -18,7 +18,7 @@ const About = (props) => {
                 {/* Text Section */}
                 <div className="text-left w-3/5 mx-auto">
                     <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
-                    <hr className="border-t-2 border-secondary mb-6" />
+                    <hr className="border-t-4 border-secondary mb-6" />
                     <p className="py-2 font-medium">
                         I am <span className="text-primary font-semibold">currently serving National Service</span> and
                         will begin studying Computer Science at{' '}
