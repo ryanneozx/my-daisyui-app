@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import useIntersectionObserver from "./useIntersectionObserver";
 
 const About = (props) => {
+    const [loading, setLoading] = useState(true);
     const elementsRef = useRef([]);
 
     // Define the callback for when elements intersect
@@ -12,11 +13,20 @@ const About = (props) => {
     // Use the custom hook
     useIntersectionObserver(elementsRef, handleIntersect);
 
+    // Simulate a loading delay of 4 seconds
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 4000);
+
+        return () => clearTimeout(timer); // Cleanup the timer on unmount
+    }, []);
+
     return (
         <div id="about-me" name="about-me" className="anchor bg-base-100 ">
             <div className="w-full flex flex-col-reverse lg:flex-row-reverse">
                 {/* Images Section */}
-                <div className="flex flex-col items-center lg:items-start lg:ml-6 lg:mt-12">
+                <div className="flex flex-col items-center lg:items-start lg:ml-6 lg:mt-14">
                     <img
                         className="max-w-sm rounded-lg shadow-2xl mb-4"
                         src="src/assets/selfie.JPEG"
@@ -32,12 +42,15 @@ const About = (props) => {
                 <div className="text-left w-3/5 mx-auto">
                     <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
                     <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6" />
+
+                    <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating">
+
                     <p className="py-2 font-medium">
-                        I am <span className="text-primary font-semibold">currently serving National Service</span> and
-                        will begin studying Computer Science at{' '}
-                        <span className="text-primary font-semibold">NUS</span> next year.
+                    I am <span className="text-primary font-semibold">currently serving National Service</span> and will begin
+                    studying Computer Science at <span className="text-primary font-semibold">NUS</span> next year.
                     </p>
-                    <p className="py-2">
+                    
+                    <p className="py-2 ">
                         In 2023, I graduated with a{' '}
                         <span className="text-primary font-semibold">
                             <div className="tooltip tooltip-accent" data-tip="Awarded to top 10% of cohort (3.97/4 GPA)">
@@ -104,7 +117,9 @@ const About = (props) => {
                             </div>
                         </div>
                     </div>
+                    
                     <p className="py-3">Outside of work, I enjoy reading, working out, and watching anime.</p>
+                    </div>
                 </div>
             </div>
         </div>

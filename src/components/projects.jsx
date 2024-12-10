@@ -12,7 +12,7 @@ const Projects = (props) => {
 
     // Use the custom hook
     useIntersectionObserver(elementsRef, handleIntersect);
-    
+
     return (
         <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh mx-10 mt-10">
             <div className="text-left">
@@ -50,8 +50,8 @@ const Projects = (props) => {
                 </div>
             </div>
             
-            <div className="grid grid-cols-3 gap-1 mt-4">
-                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 w-96 h-56">
+            <div className="grid grid-cols-3 gap-6 mt-4">
+                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 h-56">
                     <div className="card-body p-0 ">
                         <h3 className="card-title m-0 p-0 align-top">Blogs App</h3>
                         <p>Full-stack Application for a blogs app.</p>
@@ -63,7 +63,7 @@ const Projects = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 w-96 h-56">
+                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 h-56">
                     <div className="card-body p-0 ">
                         <h3 className="card-title m-0 p-0 align-top">Project Title 2</h3>
                         <p>Full-stack Application for a blogs app.</p>
@@ -75,7 +75,7 @@ const Projects = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 w-96 h-56">
+                <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 h-56">
                     <div className="card-body p-0 ">
                         <h3 className="card-title m-0 p-0 align-top">Project Title 3</h3>
                         <p>Full-stack Application for a blogs app.</p>
