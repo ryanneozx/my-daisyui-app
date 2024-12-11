@@ -11,7 +11,7 @@ const Card = ({ title, description, technologies, link }) => {
                 <p className="pt-4">{technologies}</p>
                 <div className="card-actions justify-end pb-3">
                     <a href={link} className="text-primary-content" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className="h-8 w-8" />
+                        <FaGithub className="h-8 w-8 rounded-full hover:animate-glow" />
                     </a>
                 </div>
             </div>
