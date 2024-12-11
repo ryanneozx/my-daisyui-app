@@ -14,7 +14,21 @@ html { scroll-behavior: smooth; }
   scroll-margin-top: 80px;
 } /* Fixes navbar going past anchor */
 
+@keyframes glow2 {
+  0% {
+      drop-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+}
 
+.hover\:animate-glow:hover {
+  animation: glow2 1s infinite;
+}
 
 /* Social Media icons */
 .glow:hover {
