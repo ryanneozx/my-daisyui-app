@@ -26,7 +26,7 @@ const Experience = (props) => {
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="DSTA" defaultChecked/>
                 <div role="tabpanel" className="tab-content pt-10 min-h-80">
                     <h3 className="lg:text-2xl text-lg font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
-                    <p className="lg:text-lg">Mar 2022 - Aug 2022 (6 Months)</p>
+                    <p className="lg:text-lg text-gray-400">Mar 2022 - Aug 2022 (6 Months)</p>
                     <ul className="list-disc list-inside lg:text-lg pt-4 space-y-4">
                         <li>Designed and deployed a robust DevSecOps pipeline for Android applications using Jenkins and GitLab, 
                         automating security testing and integrating seamless feedback loops into the development lifecycle.
