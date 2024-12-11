@@ -40,7 +40,7 @@ const Certifications = () => {
       </div>
 
       <ul className="space-y-4">
-        <div className="grid lg:grid-cols-2 gap-3 text-sm">
+        <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating grid lg:grid-cols-2 gap-3 text-sm">
           {certifications.map((cert, index) => (
               <li key={index} className="card bg-base-300 shadow-lg">
               <div className="card-body flex items-start">
