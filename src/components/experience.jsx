@@ -13,7 +13,7 @@ const Experience = (props) => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
     return (
-      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 my-14 lg:mx-10">
+      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 mt-14 lg:mx-10">
         <div className="flex-col text-left">
             {/* Header Section */}
             <div className="w-full">
