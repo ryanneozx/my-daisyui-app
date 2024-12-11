@@ -14,7 +14,7 @@ const Projects = (props) => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
     return (
-        <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh mx-10 mt-10">
+        <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh lg:mx-10 mt-16">
             <div className="text-left">
                 <h1 className="text-4xl font-bold tracking-wider mb-4">/projects</h1>
                 <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6"></hr>

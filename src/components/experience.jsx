@@ -13,7 +13,7 @@ const Experience = (props) => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
     return (
-      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 mt-14 mx-10">
+      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 mt-14 lg:mx-10">
         <div className="flex-col text-left">
             {/* Header Section */}
             <div className="w-full">
@@ -24,10 +24,10 @@ const Experience = (props) => {
             {/* Content Section */}
             <div role="tablist" className="tabs tabs-bordered tabs-lg w-full">
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="DSTA" defaultChecked/>
-                <div role="tabpanel" className="tab-content p-10 min-h-80">
-                    <h3 className="text-2xl font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
-                    <p className="text-lg">Mar 2022 - Aug 2022 (6 Months)</p>
-                    <ul className="list-disc list-inside text-lg pt-4 space-y-4">
+                <div role="tabpanel" className="tab-content pt-10 min-h-80">
+                    <h3 className="lg:text-2xl text-lg font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
+                    <p className="lg:text-lg">Mar 2022 - Aug 2022 (6 Months)</p>
+                    <ul className="list-disc list-inside lg:text-lg pt-4 space-y-4">
                         <li>Designed and deployed a robust DevSecOps pipeline for Android applications using Jenkins and GitLab, 
                         automating security testing and integrating seamless feedback loops into the development lifecycle.
                         </li>
@@ -39,10 +39,10 @@ const Experience = (props) => {
                 </div>
 
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="SAF MINDEF (NS)" />
-                <div role="tabpanel" className="tab-content p-10 min-h-80">
-                <h3 className="text-2xl font-semibold">Admin Support Assistant (Data Analyst) @ <span className="text-primary font-semibold">G1 Army</span></h3>
-                    <p className="text-lg">Dec 2023 - Aug 2025 (1 Year 8 Months)</p>
-                    <ul className="list-disc list-inside text-lg pt-4 space-y-2">
+                <div role="tabpanel" className="tab-content pt-10 min-h-80">
+                <h3 className="lg:text-2xl text-lg font-semibold">Admin Support Assistant (Data Analyst) @ <span className="text-primary font-semibold">G1 Army</span></h3>
+                    <p className="lg:text-lg">Dec 2023 - Aug 2025 (1 Year 8 Months)</p>
+                    <ul className="list-disc list-inside lg:text-lg pt-4 space-y-2">
                         <li>
                             Conducted detailed trend analysis to identify patterns and anomalies, supporting strategic planning and operational efficiency.
                         </li>

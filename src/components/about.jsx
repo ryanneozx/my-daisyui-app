@@ -23,7 +23,7 @@ const About = (props) => {
     }, []);
 
     return (
-        <div id="about-me" name="about-me" className="anchor bg-base-100 ">
+        <div id="about-me" name="about-me" className="anchor bg-base-100">
             <div className="w-full flex flex-col-reverse lg:flex-row-reverse">
                 {/* Images Section */}
                 <div className="flex flex-col items-center lg:items-start lg:ml-6 lg:mt-14">
@@ -39,7 +39,7 @@ const About = (props) => {
                     />
                 </div>
                 {/* Text Section */}
-                <div className="text-left w-3/5 mx-auto">
+                <div className="text-left lg:w-3/5 mx-auto">
                     <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
                     <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6" />
 
@@ -70,7 +70,7 @@ const About = (props) => {
                     </p>
                     <div className="py-4">
                         <h2 className="text-md font-semibold mb-3">Technologies I've worked with:</h2>
-                        <div className="grid grid-cols-2 gap-3 text-sm">
+                        <div className="grid lg:grid-cols-2 gap-3 text-sm">
                             {/* Programming Languages */}
                             <div className="card bg-base-300 shadow-md p-3">
                                 <h3 className="font-bold text-primary mb-1">Programming Languages</h3>
