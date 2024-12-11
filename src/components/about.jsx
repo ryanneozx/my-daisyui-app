@@ -26,7 +26,7 @@ const About = (props) => {
         <div id="about-me" name="about-me" className="anchor bg-base-100">
             <div className="w-full flex flex-col-reverse lg:flex-row-reverse">
                 {/* Images Section */}
-                <div className="flex flex-col items-center lg:items-start lg:ml-6 lg:mt-14">
+                <div ref={(el) => (elementsRef.current[2] = el)}  className="delayed-floating flex flex-col items-center lg:items-start lg:ml-6 lg:mt-14">
                     <img
                         className="max-w-sm rounded-lg shadow-2xl mb-4"
                         src="src/assets/selfie.JPEG"

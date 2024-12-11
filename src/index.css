@@ -36,7 +36,7 @@ hr.active {
   width: 100%;
   /* height: 100px; */
   animation-name: loading;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
 }
 
 /* Define the floating up animation */
@@ -60,13 +60,17 @@ hr.active {
 }
 
 /* Apply the animation to the text */
+.delayed-floating {
+  opacity: 0%; /* hide text before animation */
+}
+
 .delayed-floating.active {
   /* display: inline-block; */
   /* font-size: 2rem; */
   /* font-weight: bold; */
-  
+  /* display: inline-block; */
   animation: floatUp 1s ease-out forwards;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 .typewriter.active h1 {

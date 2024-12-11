@@ -13,7 +13,7 @@ const Experience = (props) => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
     return (
-      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 mt-14 lg:mx-10">
+      <div id="experience" name="experience" className="anchor bg-base-100 min-h-96 my-14 lg:mx-10">
         <div className="flex-col text-left">
             {/* Header Section */}
             <div className="w-full">
@@ -22,7 +22,7 @@ const Experience = (props) => {
             </div>
   
             {/* Content Section */}
-            <div role="tablist" className="tabs tabs-bordered tabs-lg w-full">
+            <div role="tablist" ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating tabs tabs-bordered tabs-lg w-full">
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="DSTA" defaultChecked/>
                 <div role="tabpanel" className="tab-content pt-10 min-h-80">
                     <h3 className="lg:text-2xl text-lg font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
