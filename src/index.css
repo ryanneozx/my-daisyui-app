@@ -24,17 +24,15 @@ html { scroll-behavior: smooth; }
 
 /* hr loading bars */
 @keyframes loading {
-  0%   {background-color: red; width: 0%;}
-  20%   {background-color: red; width: 20%;}
-  /* 25%  {background-color: yellow; width: 40%;} */
-  50%  {background-color: blue; width: 50%;}
-  100% {background-color: green; width: 100%;}
+  0%   {width: 0%;}
+  20%   {width: 20%;}
+  50%  {width: 50%;}
+  100% {width: 100%;}
 }
 
 /* The element to apply the animation to */
 hr.active {
   width: 100%;
-  /* height: 100px; */
   animation-name: loading;
   animation-duration: 1.5s;
 }
@@ -51,11 +49,9 @@ hr.active {
   }
 }
 
+
 /* Apply the animation to the text */
 .floating-text.active {
-  /* display: inline-block; */
-  /* font-size: 2rem; */
-  /* font-weight: bold; */
   animation: floatUp 1s ease-out forwards;
 }
 
@@ -65,17 +61,12 @@ hr.active {
 }
 
 .delayed-floating.active {
-  /* display: inline-block; */
-  /* font-size: 2rem; */
-  /* font-weight: bold; */
-  /* display: inline-block; */
   animation: floatUp 1s ease-out forwards;
   animation-delay: 1.5s;
 }
 
 .typewriter.active h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /* border-right: .15em solid #c59f60; The typwriter cursor */
   border-right: .15em solid oklch(var(--p)); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
