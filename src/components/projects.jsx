@@ -60,7 +60,7 @@ const Projects = (props) => {
                 <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6 rounded-full"></hr>
             </div>
             
-            <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating">
+            <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-fade">
                 <div className="carousel w-4/5 rounded-box">
                     <div id="slide1" className="carousel-item relative w-full anchor">
                         <img

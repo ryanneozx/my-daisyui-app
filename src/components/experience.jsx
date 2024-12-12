@@ -22,7 +22,7 @@ const Experience = (props) => {
             </div>
   
             {/* Content Section */}
-            <div role="tablist" ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating tabs tabs-bordered tabs-lg w-full">
+            <div role="tablist" ref={(el) => (elementsRef.current[1] = el)} className="delayed-fade tabs tabs-bordered tabs-lg w-full">
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold lg:min-w-48" aria-label="DSTA" defaultChecked/>
                 <div role="tabpanel" className="tab-content pt-10 min-h-80">
                     <h3 className="lg:text-2xl text-lg font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>

@@ -28,14 +28,14 @@ const Hero1 = (props) => {
                     <div ref={(el) => (elementsRef.current[0] = el)} className="text-6xl font-bold typewriter inline-block">
                         <h1>Hi, I'm Ryan.</h1>
                     </div>
-                    <div ref={(el) => (elementsRef.current[1] = el)} className='floating-text'>
-                        <h2 className="text-2xl font-bold mt-2 floating-text">Software Development and Cybersecurity is my thing.</h2>
+                    <div ref={(el) => (elementsRef.current[1] = el)} className='fade-text'>
+                        <h2 className="text-2xl font-bold mt-2 fade-text">Software Development and Cybersecurity is my thing.</h2>
                         <p className="py-6">
                             I'm currently a student based in Singapore. I have a profound interest in Web App Development, 
                             Android App Development, and Cybersecurity surrounding them. 
                             
                         </p>
-                        <div className="flex justify-center gap-1 floating-text">
+                        <div className="flex justify-center gap-1 fade-text">
                             <a href={resume} target="_blank" rel="noopener noreferrer" className='mr-2'>
                                 <button className="btn btn-primary">
                                 <div className="flex items-center text-primary-content">
