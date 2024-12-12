@@ -18,12 +18,12 @@ const Experience = (props) => {
             {/* Header Section */}
             <div className="w-full">
                 <h1 className="text-4xl font-bold tracking-wider mb-4">/experience</h1>
-                <hr ref={(el) => (elementsRef.current[0] = el)}  className="border-t-4 border-secondary mb-6"></hr>
+                <hr ref={(el) => (elementsRef.current[0] = el)}  className="border-t-4 border-secondary mb-6 rounded-full"></hr>
             </div>
   
             {/* Content Section */}
             <div role="tablist" ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating tabs tabs-bordered tabs-lg w-full">
-                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="DSTA" defaultChecked/>
+                <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold lg:min-w-48" aria-label="DSTA" defaultChecked/>
                 <div role="tabpanel" className="tab-content pt-10 min-h-80">
                     <h3 className="lg:text-2xl text-lg font-semibold">Cybersecurity Intern @ <span className="text-primary font-semibold">DSTA Cybersecurity Programme Centre</span></h3>
                     <p className="lg:text-lg text-gray-400">Mar 2022 - Aug 2022 (6 Months)</p>
@@ -41,7 +41,7 @@ const Experience = (props) => {
                 <input type="radio" name="my_tabs_1" role="tab" className="tab text-lg font-semibold min-w-48" aria-label="SAF MINDEF (NS)" />
                 <div role="tabpanel" className="tab-content pt-10 min-h-80">
                 <h3 className="lg:text-2xl text-lg font-semibold">Admin Support Assistant (Data Analyst) @ <span className="text-primary font-semibold">G1 Army</span></h3>
-                    <p className="lg:text-lg">Dec 2023 - Aug 2025 (1 Year 8 Months)</p>
+                    <p className="lg:text-lg text-gray-400">Dec 2023 - Aug 2025 (1 Year 8 Months)</p>
                     <ul className="list-disc list-inside lg:text-lg pt-4 space-y-2">
                         <li>
                             Conducted detailed trend analysis to identify patterns and anomalies, supporting strategic planning and operational efficiency.

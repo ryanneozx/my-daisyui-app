@@ -32,17 +32,18 @@ const Certifications = () => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
   return (
-    <section id="certifications" className="anchor lg:pt-0 pt-6 mx-10 rounded-lg shadow-md">
+    <section id="certifications" className="anchor lg:pt-0 pt-6 mx-10 rounded-lg ">
       {/* Header Section */}
       <div className="w-full ">
         <h1 className="text-4xl font-bold tracking-wider mb-4 text-left">/certifications</h1>
-        <hr ref={(el) => (elementsRef.current[0] = el)}  className="border-t-4 border-secondary mb-6"></hr>
+        <hr ref={(el) => (elementsRef.current[0] = el)}  className="border-t-4 border-secondary mb-6 rounded-full"></hr>
       </div>
 
       <ul className="space-y-4">
-        <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating grid lg:grid-cols-2 gap-3 text-sm">
+        <div className="grid lg:grid-cols-2 gap-3 text-sm">
           {certifications.map((cert, index) => (
-              <li key={index} className="card bg-base-300 shadow-lg">
+              <li ref={(el) => (elementsRef.current[1+index] = el)} key={index} className="card bg-base-300 shadow-lg fade-in" style={{ opacity:0, animationDelay: `${1.5+index*0.2}s` }}
+              >
               <div className="card-body flex items-start">
                 {/* Certification Image */}
                 <img 

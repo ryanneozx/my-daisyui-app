@@ -2,9 +2,11 @@ import React, { useRef } from "react";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { FaGithub } from "react-icons/fa";
 
-const Card = ({ title, description, technologies, link }) => {
+const Card = ({ title, description, technologies, link, delay, eleRef, index }) => {
     return (
-        <div className="card card-compact bg-primary text-primary-content text-left m-0 p-0 h-56 transform transition-transform duration-300 hover:translate-y-[-20px]">
+        <div ref={(el) => (eleRef.current[2+index] = el)} 
+        className="card card-compact bg-primary text-primary-content text-left m-0 p-0 h-56 shadow-md transform proj-card"
+        >
             <div className="card-body p-0">
                 <h3 className="card-title m-0 p-0 align-top">{title}</h3>
                 <p>{description}</p>
@@ -55,7 +57,7 @@ const Projects = (props) => {
         <div id="projects" name="projects" className="anchor bg-base-100 min-h-svh lg:mx-10 mt-16">
             <div className="text-left">
                 <h1 className="text-4xl font-bold tracking-wider mb-4">/projects</h1>
-                <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6"></hr>
+                <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6 rounded-full"></hr>
             </div>
             
             <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating">
@@ -91,12 +93,14 @@ const Projects = (props) => {
                 
                 <div className="grid lg:grid-cols-3 gap-4 mt-6"> {/* Adjust grid-cols for responsive layout */}
                     {projects.map((project, index) => (
-                        <Card className=""
+                        <Card className="" index={index}
+                            eleRef={elementsRef}
                             key={index}
                             title={project.title}
                             description={project.description}
                             technologies={project.technologies}
                             link={project.link}
+                            delay={index * 0.2} // Incremental delay for each card
                         />
                     ))}
                 </div>

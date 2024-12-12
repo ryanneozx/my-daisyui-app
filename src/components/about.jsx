@@ -41,7 +41,7 @@ const About = (props) => {
                 {/* Text Section */}
                 <div className="text-left lg:w-3/5 mx-auto">
                     <h1 className="text-4xl font-bold tracking-wider mb-4">/about-me</h1>
-                    <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6" />
+                    <hr ref={(el) => (elementsRef.current[0] = el)} className="border-t-4 border-secondary mb-6 rounded-full" />
 
                     <div ref={(el) => (elementsRef.current[1] = el)} className="delayed-floating">
 

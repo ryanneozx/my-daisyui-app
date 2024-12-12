@@ -14,6 +14,32 @@ html { scroll-behavior: smooth; }
   scroll-margin-top: 80px;
 } /* Fixes navbar going past anchor */
 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in.active {
+  animation: fadeIn 0.5s ease forwards;
+  animation-fill-mode: forwards; /* Ensure state persists after animation */
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0; /* hide text before animation */
+}
+
+.proj-card:hover {
+  transform: translateY(-20px);
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
 @keyframes glow2 {
   0% {
       drop-shadow: 0 0 0px rgba(255, 255, 255, 0.7);
@@ -33,9 +59,6 @@ html { scroll-behavior: smooth; }
 /* Social Media icons */
 .glow:hover {
   color: oklch(var(--p));
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
 }
 
 /* hr loading bars */
