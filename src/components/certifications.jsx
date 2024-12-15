@@ -32,7 +32,7 @@ const Certifications = () => {
     useIntersectionObserver(elementsRef, handleIntersect);
 
   return (
-    <section id="certifications" className="anchor lg:pt-0 pt-6 mx-10 rounded-lg ">
+    <section id="certifications" className="anchor lg:pt-0 pt-6 lg:mx-10 rounded-lg ">
       {/* Header Section */}
       <div className="w-full ">
         <h1 className="text-4xl font-bold tracking-wider mb-4 text-left">/certifications</h1>
