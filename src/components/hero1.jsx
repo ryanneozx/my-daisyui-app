@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import useIntersectionObserver from "./useIntersectionObserver";
-import resume from '../assets/resume.pdf'
+import resume from '../assets/ryanneozx_resume.pdf'
 import { IoMailSharp } from "react-icons/io5";
 import { IoIosPaper } from "react-icons/io";
 
